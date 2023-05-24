@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>empid</th>
+                <th>empname</th>
+                <th>sex</th>
+                <th>age</th>
+                <th>depid</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for obj in data_list %}
+                <tr>
+                    <td>{{ obj.empid }}</td>
+                    <td>{{ obj.empname }}</td>
+                    <td>{{ obj.sex }}</td>
+                    <td>{{ obj.age }}</td>
+                    <td>{{ obj.depid }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

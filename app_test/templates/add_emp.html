@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/add_emp" method="post">
+
+        {% csrf_token %}
+
+        <input type="text" name="empid" placeholder="empid">
+        <input type="text" name="empname" placeholder="empname">
+        <input type="text" name="sex" placeholder="sex">
+        <input type="text" name="age" placeholder="age">
+        <input type="text" name="depid" placeholder="depid">
+
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

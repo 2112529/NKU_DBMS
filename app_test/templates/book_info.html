@@ -48,8 +48,8 @@
                         <td>{{ obj.isbn }}</td>
                         <td>{{ obj.status }}</td>
                         <td>
-                            <a class="btn btn-primary btn-xs" href="/edit_book/">Edit</a>
-                            <a class="btn btn-danger btn-xs" href="/delete_book/">Delete</a>
+                            <a class="btn btn-primary btn-xs" href="{% url 'edit_book' obj.book_id %}">Edit</a>
+                            <a class="btn btn-danger btn-xs" href="{% url 'delete_book' obj.book_id %}">Delete</a>
                         </td>
                     </tr>
                     {% endfor %}

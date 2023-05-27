@@ -18,8 +18,8 @@ urlpatterns = [
     path('main/',views.main),
     path('add_emp/',views.add_emp),
     path('add_book/',books.add_book),
-    path('edit_book/',books.edit_book),
-    path('delete_book/',books.delete_book),
+    path('edit_book/<int:book_id>/', books.edit_book, name='edit_book'),
+    path('delete_book/<int:book_id>/', books.delete_book, name='delete_book'),
 
 
 

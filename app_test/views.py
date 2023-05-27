@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 
 from app_test import models
+from app_test.books import ADD_BOOK_Form
 
 
 def index_app(req):
@@ -68,8 +69,19 @@ def add_emp(request):
     return render(request,'add_emp.html')
 
 
-class ADD_BOOK_ModelForm(forms.ModelForm):
-    class Meta:
-        model = models.Book
-        fields = ["book_id","book_title", "category_id", "author", "book_copies", "book_pub", "publisher_name", "isbn", "copyright_year", "date_added", "status"]
 
+
+def edit_book(request, book_id):
+    # 根据book_id获取对应的图书对象
+    book = models.Book.objects.get(book_id=book_id)
+
+    if request.method == "POST":
+        # 处理表单提交的逻辑
+        form = ADD_BOOK_Form(request.POST, instance=book)
+        if form.is_valid():
+            form.save()
+            return redirect('/book_info/')
+    else:
+        form = ADD_BOOK_Form(instance=book)
+
+    return render(request, "edit_book.html", {'form': form})

@@ -1,13 +1,19 @@
 from django import forms
 from django.shortcuts import render, HttpResponse, redirect
+
+from app_test import models
 from app_test.models import Book
-from app_test.views import ADD_BOOK_ModelForm
+
 
 
 def book_info(request):
     book_info=Book.objects.values("book_id","book_title","author","publisher_name","isbn","status")
 
     return render(request,"book_info.html",{"book_info":book_info})
+class ADD_BOOK_ModelForm(forms.ModelForm):
+    class Meta:
+        model = models.Book
+        fields = ["book_id","book_title", "category_id", "author", "book_copies", "book_pub", "publisher_name", "isbn", "copyright_year", "date_added", "status"]
 
 class ADD_BOOK_Form(ADD_BOOK_ModelForm):
     book_id=forms.IntegerField(
@@ -86,8 +92,67 @@ def add_book(request):
 
     return render(request, 'add_book.html', {"form": form})
 
-def edit_book(request):
-    return render(request,"edit_book.html")
 
-def delete_book(request):
-    return render(request,"delete_book.html")
+class EditBookForm(forms.ModelForm):
+    class Meta:
+        model = Book
+        fields = ['book_title',  'author',  'publisher_name', 'isbn',  'status']
+        widgets = {
+            'book_title': forms.TextInput(attrs={'class': 'form-control'}),
+
+            'author': forms.TextInput(attrs={'class': 'form-control'}),
+
+            'publisher_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'isbn': forms.TextInput(attrs={'class': 'form-control'}),
+
+            'status': forms.TextInput(attrs={'class': 'form-control'}),
+        }
+
+
+def edit_book(request, book_id=None):
+    if book_id:
+        book = Book.objects.get(book_id=book_id)
+        form = EditBookForm(instance=book)
+    else:
+        form = EditBookForm()
+
+    if request.method == 'POST':
+        form = EditBookForm(request.POST)
+        if form.is_valid():
+            # 从表单中获取更新的数据
+            book_title = form.cleaned_data['book_title']
+            author = form.cleaned_data['author']
+            publisher_name = form.cleaned_data['publisher_name']
+            isbn = form.cleaned_data['isbn']
+            status = form.cleaned_data['status']
+
+            # 更新数据库中的书籍信息
+            if book_id:
+                book = Book.objects.get(book_id=book_id)
+            else:
+                book = Book()
+
+            book.book_title = book_title
+            book.author = author
+            book.publisher_name = publisher_name
+            book.isbn = isbn
+            book.status = status
+            book.save()
+
+            # 重定向到书籍列表页面或其他页面
+            return redirect('/book_info/')
+
+    return render(request, 'edit_book.html', {'form': form, 'book_id': book_id})
+
+
+def delete_book(request, book_id):
+    book = Book.objects.get(book_id=book_id)
+
+    if request.method == 'POST':
+        # 删除数据库中的书籍
+        book.delete()
+
+        # 重定向到书籍列表页面或其他页面
+        return redirect('/book_info/')
+
+    return render(request, 'delete_book.html', {'book': book, 'book_id': book_id})

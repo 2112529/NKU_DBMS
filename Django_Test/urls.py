@@ -3,6 +3,7 @@ from django.urls import path
 from app_test.views import index_app
 from app_test import views
 from app_test import account
+from app_test import books
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index_app/', index_app),
@@ -12,5 +13,14 @@ urlpatterns = [
     path('login/',account.login),
     path('logup/',account.logup),
     path('orm_test/',views.orm_test),
-    path('book_info/',account.book_info),
+    path('book_info/',views.book_info),
+    path('mem_info/',account.mem_info),
+    path('main/',views.main),
+    path('add_emp/',views.add_emp),
+    path('add_book/',books.add_book),
+    path('edit_book/',books.edit_book),
+    path('delete_book/',books.delete_book),
+
+
+
 ]

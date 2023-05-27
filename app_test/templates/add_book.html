@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+<style>
+    .account {
+        width: 400px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        box-shadow: 5px 5px 20px #aaa;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        padding: 20px 40px;
+    }
+
+    .account h2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="account">
+    <h2>ADD BOOK</h2>
+    <div class="panel-body">
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Book Title</label>
+                {{ form.book_title }}
+                <span style="color: red;">{{ form.errors.book_title.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Category ID</label>
+                {{ form.category_id }}
+                <span style="color: red;">{{ form.errors.category_id.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Author</label>
+                {{ form.author }}
+                <span style="color: red;">{{ form.errors.author.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Book Copies</label>
+                {{ form.book_copies }}
+                <span style="color: red;">{{ form.errors.book_copies.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Book Publication</label>
+                {{ form.book_pub }}
+                <span style="color: red;">{{ form.errors.book_pub.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Publisher Name</label>
+                {{ form.publisher_name }}
+                <span style="color: red;">{{ form.errors.publisher_name.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>ISBN</label>
+                {{ form.isbn }}
+                <span style="color: red;">{{ form.errors.isbn.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Copyright Year</label>
+                {{ form.copyright_year }}
+                <span style="color: red;">{{ form.errors.copyright_year.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Date added</label>
+                {{ form.date_added }}
+                <span style="color: red;">{{ form.errors.date_added.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>Status</label>
+                {{ form.status }}
+                <span style="color: red;">{{ form.errors.status.0 }}</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary center-block" style="width: 80px;">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

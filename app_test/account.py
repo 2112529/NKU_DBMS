@@ -5,7 +5,8 @@ from app_test.views import UserLoginModelForm
 from app_test.views import UserLogupModelForm
 
 
-from app_test.models import Users
+from app_test.models import Users, Member
+
 
 # 这一次不使用ModelForm,使用Form来实现
 class LoginForm(UserLoginModelForm):
@@ -73,14 +74,14 @@ def login(request):
         	# 手动抛出错误显示在"password"字段下
             form.add_error("password", "用户名或密码错误")
             return render(request, 'login.html', {"form": form})
-        return redirect("/book_info/")
+        return redirect("/main/")
 
     return render(request, 'login.html', {"form": form})
 
 def logup(request):
     """注册"""
     if request.method == "GET":
-        form = LoginForm()
+        form = LogupForm()
         return render(request, 'logup.html', {"form": form})
 
     form = LogupForm(data=request.POST)
@@ -96,5 +97,7 @@ def logup(request):
 
     return render(request, 'logup.html', {"form": form})
 
-def book_info(request):
-    return render(request,"book_info.html")
+def mem_info(request):
+    mem_info=Member.objects.all()
+
+    return render(request,"mem_info.html",{"mem_info":mem_info})

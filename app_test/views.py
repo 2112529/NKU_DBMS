@@ -45,5 +45,31 @@ class UserLogupModelForm(forms.ModelForm):
         model= models.Users
         fields=["username","password","firstname","lastname"]
 
+def main(request):
+    return render(request,"Outer_welcome.html")
 
+from django.shortcuts import render
+from app_test.models import Book
+
+def book_info(request):
+    filter_value = request.GET.get('value')  # 获取输入框的值
+    books = Book.objects.all()
+
+    if filter_value:
+        books = books.filter(status=filter_value)  # 根据输入框的值进行筛选
+
+    context = {
+        'book_info': books,
+        'filter_value': filter_value  # 将筛选值传递给模板以便显示
+    }
+    return render(request, 'book_info.html', context)
+
+def add_emp(request):
+    return render(request,'add_emp.html')
+
+
+class ADD_BOOK_ModelForm(forms.ModelForm):
+    class Meta:
+        model = models.Book
+        fields = ["book_id","book_title", "category_id", "author", "book_copies", "book_pub", "publisher_name", "isbn", "copyright_year", "date_added", "status"]
 

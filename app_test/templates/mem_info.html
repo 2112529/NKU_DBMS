@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container">
+    <div style="margin-bottom: 10px">
+        <a class="btn btn-primary" href="#" target="_blank">New Member</a>
+    </div>
+    <div>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true" style="margin-right: 5px;"></span>
+                <span>Mem_List</span>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Type</th>
+                        <th>Year_Level</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for obj in mem_info %}
+                    <tr>
+                        <th>{{ obj.member_id }}</th>
+                        <td>{{ obj.firstname }}</td>
+                        <td>{{ obj.lastname }}</td>
+                        <td>{{ obj.gender }}</td>
+                        <td>{{ obj.address }}</td>
+                        <td>{{ obj.contact }}</td>
+                        <td>{{ obj.type }}</td>
+                        <td>{{ obj.year_level }}</td>
+                        <td>{{ obj.status }}</td>
+
+
+                        <td>
+                            <a class="btn btn-primary btn-xs" href="#">edit</a>
+                            <a class="btn btn-danger btn-xs" href="#">delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

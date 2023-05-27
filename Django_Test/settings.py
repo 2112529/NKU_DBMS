@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import logging
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -90,8 +90,62 @@ DATABASES = {
         'PASSWORD':'030523',
         'HOST':'127.0.0.1',
         'PORT':'3306',
+        # 'OPTIONS': {
+        #     'log_level': logging.DEBUG,
+        # },
     }
 }
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': 'sql.log',  # 指定日志文件的路径和名称
+#         },
+#     },
+#     'loggers': {
+#         'django.db.backends': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'log_file.log',
+            'level': 'DEBUG',
+        },
+    },
+    'root': {
+        'handlers': ['file'],
+        'level': 'DEBUG',
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+}
+
+
+
+
+
+
 
 
 # Password validation
@@ -117,6 +171,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
 LANGUAGE_CODE = "en-us"
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
 TIME_ZONE = "UTC"
 

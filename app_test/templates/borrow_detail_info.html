@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container">
+    <div style="margin-bottom: 10px">
+        <a class="btn btn-primary" href="#" target="_blank">New Record</a>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <form method="get" action="/borrow_info/">
+            <div class="input-group" style="margin-bottom: 10px;">
+                <input type="text" class="form-control" name="value" id="filterInput" placeholder="Enter information" value="{{ filter_value }}">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Filter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true" style="margin-right: 5px;"></span>
+                <span>BorrowInfo_List</span>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Borrow_ID</th>
+                        <th>Mem_ID</th>
+                        <th>Book_ID</th>
+                        <th>Date_Borrow</th>
+                        <th>Date_Due</th>
+                        <th>Status</th>
+                        <th>Return_Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for obj in borrow_info %}
+                    <tr>
+                        <th>{{ obj.borrow_id }}</th>
+                        <td>{{ obj.member_id }}</td>
+                        <td>{{ obj.book_id }}</td>
+                        <td>{{ obj.date_borrow }}</td>
+                        <td>{{ obj.due_date }}</td>
+                        <td>{{ obj.borrow_status }}</td>
+                        <td>{{ obj.date_return  }}</td>
+                        <td>
+                            <a class="btn btn-primary btn-xs" href="#">edit</a>
+                            <a class="btn btn-danger btn-xs" href="#">delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

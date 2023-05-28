@@ -104,3 +104,17 @@ class Users(models.Model):
     class Meta:
         managed = False
         db_table = 'users'
+
+class BorrowView(models.Model):
+    borrow_id = models.IntegerField(primary_key=True)
+    member_id = models.BigIntegerField()
+    date_borrow = models.CharField(max_length=100)
+    due_date = models.CharField(max_length=100, blank=True, null=True)
+    borrow_details_id = models.IntegerField()
+    book_id = models.IntegerField()
+    borrow_status = models.CharField(max_length=50)
+    date_return = models.CharField(max_length=100)
+
+    class Meta:
+        managed = False
+        db_table = 'borrow_view'

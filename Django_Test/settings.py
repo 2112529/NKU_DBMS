@@ -100,24 +100,7 @@ DATABASES = {
     }
 }
 
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'file': {
-#             'level': 'DEBUG',
-#             'class': 'logging.FileHandler',
-#             'filename': 'sql.log',  # 指定日志文件的路径和名称
-#         },
-#     },
-#     'loggers': {
-#         'django.db.backends': {
-#             'handlers': ['file'],
-#             'level': 'DEBUG',
-#             'propagate': True,
-#         },
-#     },
-# }
+
 
 LOGGING = {
     'version': 1,

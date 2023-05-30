@@ -106,17 +106,15 @@ class EditBookForm(forms.ModelForm):
         }
 
 
-from django.db import connection
+from django.db import connection, IntegrityError
+
 
 def edit_book(request, book_id=None):
     if book_id:
-
-
         book = Book.objects.get(book_id=book_id)
         form = EditBookForm(instance=book)
     else:
         form = EditBookForm()
-
     if request.method == 'POST':
         form = EditBookForm(request.POST)
         if form.is_valid():
@@ -140,13 +138,21 @@ def edit_book(request, book_id=None):
             book.publisher_name = publisher_name
             book.isbn = isbn
             book.status = status
+
+            try:
+                book.save()
+                with connection.cursor() as cursor:
+                    cursor.callproc('insert_lost_book_plus', [book_id])
+                print("Update completed")
+            except IntegrityError:
+                raise ValueError("Stored procedure violation occurred")
             book.save()
 
-            with connection.cursor() as cursor:
-                cursor.callproc('insert_lost_book', [book_id])
-
-            # 重定向到书籍列表页面或其他页面
-            return redirect('/book_info/')
+            # with connection.cursor() as cursor:
+            #     cursor.callproc('insert_lost_book_plus', [book_id])
+            #
+            # # 重定向到书籍列表页面或其他页面
+            # return redirect('/book_info/')
 
     return render(request, 'edit_book.html', {'form': form, 'book_id': book_id})
 

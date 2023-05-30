@@ -16917,3 +16917,830 @@ Not Found: /delete_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
 (0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 49 LIMIT 21; args=(49,); alias=default
 (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
 (0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+Not Found: /
+Not Found: /favicon.ico
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+D:\PycharmProjects\Django_Test\Django_Test\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\PycharmProjects\Django_Test\Django_Test\settings.py changed, reloading.
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+D:\PycharmProjects\Django_Test\Django_Test\settings.py changed, reloading.
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+D:\PycharmProjects\Django_Test\app_test\books.py changed, reloading.
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.015) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+Not Found: /
+Not Found: /favicon.ico
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`status` = 'New'; args=('New',); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`status` = 'Lost'; args=('Lost',); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`status` = 'hello'; args=('hello',); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) None; args=['Test', 22, 'hello', 22, 'world', 'world', '123-132', 2222, '', '2013-12-11 06:47:11', 'New']; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` LIMIT 21; args=(); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` LIMIT 21; args=(); alias=default
+Internal Server Error: /add_book/
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1644, 'category_id not exists')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\Django_Test\app_test\books.py", line 84, in add_book
+    admin_object = Book.objects.create(**form.cleaned_data)
+  File "D:\Anaconda\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "D:\Anaconda\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\Anaconda\lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1644, 'category_id not exists')
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.015) INSERT INTO `book` (`book_title`, `category_id`, `author`, `book_copies`, `book_pub`, `publisher_name`, `isbn`, `copyright_year`, `date_receive`, `date_added`, `status`) VALUES ('Test', 3, 'hello', 22, 'world', 'world', '123-132', 2222, '', '2013-12-11 06:47:11', 'New'); args=['Test', 3, 'hello', 22, 'world', 'world', '123-132', 2222, '', '2013-12-11 06:47:11', 'New']; alias=default
+(0.016) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 50 LIMIT 21; args=(50,); alias=default
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 50 LIMIT 21; args=(50,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 50 LIMIT 21; args=(50,); alias=default
+(0.015) UPDATE `book` SET `book_title` = 'Test_chanhe', `category_id` = 2, `author` = 'hello', `book_copies` = 22, `book_pub` = 'world', `publisher_name` = 'world', `isbn` = '123-132', `copyright_year` = 2222, `date_receive` = '', `date_added` = '2013-12-11 06:47:11', `status` = 'Lost' WHERE `book`.`book_id` = 50; args=('Test_chanhe', 2, 'hello', 22, 'world', 'world', '123-132', 2222, '', '2013-12-11 06:47:11', 'Lost', 50); alias=default
+Internal Server Error: /edit_book/50/
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'Member_No' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\Django_Test\app_test\books.py", line 143, in edit_book
+    cursor.callproc('insert_lost_book', [book_id])
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 64, in callproc
+    return self.cursor.callproc(procname, params, kparams)
+  File "D:\Anaconda\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1048, "Column 'Member_No' cannot be null")
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 50 LIMIT 21; args=(50,); alias=default
+Not Found: /delete_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+Not Found: /delete_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+Not Found: /delete_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+Not Found: /delete_book/static/js/jquery-3.7.0.min.js
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 50 LIMIT 21; args=(50,); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 48 LIMIT 21; args=(48,); alias=default
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+(0.015) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.016) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.016) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+Not Found: /
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.015) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view` WHERE `borrow_view`.`borrow_status` = 'returned'; args=('returned',); alias=default
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+Not Found: /
+Not Found: /favicon.ico
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.016) INSERT INTO `book` (`book_title`, `category_id`, `author`, `book_copies`, `book_pub`, `publisher_name`, `isbn`, `copyright_year`, `date_receive`, `date_added`, `status`) VALUES ('Test', 2, 'hello', 22, 'world', 'world', '123-132', 2211, '', '2013-12-11 06:47:11', 'New'); args=['Test', 2, 'hello', 22, 'world', 'world', '123-132', 2211, '', '2013-12-11 06:47:11', 'New']; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+(0.000) UPDATE `book` SET `book_title` = 'Test', `category_id` = 2, `author` = 'hello', `book_copies` = 22, `book_pub` = 'world', `publisher_name` = 'world', `isbn` = '123-132', `copyright_year` = 2211, `date_receive` = '', `date_added` = '2013-12-11 06:47:11', `status` = 'Lost' WHERE `book`.`book_id` = 51; args=('Test', 2, 'hello', 22, 'world', 'world', '123-132', 2211, '', '2013-12-11 06:47:11', 'Lost', 51); alias=default
+Internal Server Error: /edit_book/51/
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1292, "Incorrect date value: ' ' for column 'Date Find' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\Django_Test\app_test\books.py", line 143, in edit_book
+    cursor.callproc('insert_lost_book_plus', [book_id])
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 64, in callproc
+    return self.cursor.callproc(procname, params, kparams)
+  File "D:\Anaconda\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1292, "Incorrect date value: ' ' for column 'Date Find' at row 1")
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+(0.000) UPDATE `book` SET `book_title` = 'Test', `category_id` = 2, `author` = 'hello', `book_copies` = 22, `book_pub` = 'world', `publisher_name` = 'world', `isbn` = '123-132', `copyright_year` = 2211, `date_receive` = '', `date_added` = '2013-12-11 06:47:11', `status` = 'Lost' WHERE `book`.`book_id` = 51; args=('Test', 2, 'hello', 22, 'world', 'world', '123-132', 2211, '', '2013-12-11 06:47:11', 'Lost', 51); alias=default
+(0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 51 LIMIT 21; args=(51,); alias=default
+(0.000) UPDATE `book` SET `book_title` = 'Test', `category_id` = 2, `author` = 'hello', `book_copies` = 22, `book_pub` = 'world', `publisher_name` = 'world', `isbn` = '123-132', `copyright_year` = 2211, `date_receive` = '', `date_added` = '2013-12-11 06:47:11', `status` = 'Lost but Find' WHERE `book`.`book_id` = 51; args=('Test', 2, 'hello', 22, 'world', 'world', '123-132', 2211, '', '2013-12-11 06:47:11', 'Lost but Find', 51); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `member`.`member_id`, `member`.`firstname`, `member`.`lastname`, `member`.`gender`, `member`.`address`, `member`.`contact`, `member`.`type`, `member`.`year_level`, `member`.`status` FROM `member`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `borrow_view`.`borrow_id`, `borrow_view`.`member_id`, `borrow_view`.`date_borrow`, `borrow_view`.`due_date`, `borrow_view`.`borrow_details_id`, `borrow_view`.`book_id`, `borrow_view`.`borrow_status`, `borrow_view`.`date_return` FROM `borrow_view`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+D:\PycharmProjects\Django_Test\app_test\books.py changed, reloading.
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+D:\PycharmProjects\Django_Test\app_test\books.py changed, reloading.
+Watching for file changes with StatReloader
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 32 LIMIT 21; args=(32,); alias=default
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.015) INSERT INTO `book` (`book_title`, `category_id`, `author`, `book_copies`, `book_pub`, `publisher_name`, `isbn`, `copyright_year`, `date_receive`, `date_added`, `status`) VALUES ('11111', 2, 'hello', 22, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'New'); args=['11111', 2, 'hello', 22, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'New']; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 52 LIMIT 21; args=(52,); alias=default
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 52 LIMIT 21; args=(52,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 52 LIMIT 21; args=(52,); alias=default
+(0.000) UPDATE `book` SET `book_title` = 'hello-change', `category_id` = 2, `author` = 'hello', `book_copies` = 22, `book_pub` = 'world', `publisher_name` = 'world', `isbn` = '123-132', `copyright_year` = 2212, `date_receive` = '', `date_added` = '2013-12-11 06:47:11', `status` = 'Lost' WHERE `book`.`book_id` = 52; args=('hello-change', 2, 'hello', 22, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'Lost', 52); alias=default
+Internal Server Error: /edit_book/52/
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1644, 'Invalid book ID')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\Django_Test\app_test\books.py", line 145, in edit_book
+    cursor.callproc('insert_lost_book_plus', [book_id])
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 64, in callproc
+    return self.cursor.callproc(procname, params, kparams)
+  File "D:\Anaconda\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1644, 'Invalid book ID')
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) None; args=['hello-change', 22, 'hello', 2, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'New']; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` LIMIT 21; args=(); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` LIMIT 21; args=(); alias=default
+Internal Server Error: /add_book/
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1644, 'category_id too large')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\Django_Test\app_test\books.py", line 84, in add_book
+    admin_object = Book.objects.create(**form.cleaned_data)
+  File "D:\Anaconda\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "D:\Anaconda\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\Anaconda\lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1644, 'category_id too large')
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) INSERT INTO `book` (`book_title`, `category_id`, `author`, `book_copies`, `book_pub`, `publisher_name`, `isbn`, `copyright_year`, `date_receive`, `date_added`, `status`) VALUES ('hello-change', 15, 'hello', 2, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'New'); args=['hello-change', 15, 'hello', 2, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'New']; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 53 LIMIT 21; args=(53,); alias=default
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/css/bootstrap.css
+Not Found: /edit_book/static/plugins/font-awesome-4.7.0/css/font-awesome.css
+Not Found: /edit_book/static/js/jquery-3.7.0.min.js
+Not Found: /edit_book/static/plugins/bootstrap-3.4.1/js/bootstrap.min.js
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 53 LIMIT 21; args=(53,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 53 LIMIT 21; args=(53,); alias=default
+(0.000) None; args=('hello-change', 22, 'hello', 2, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'New', 53); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` LIMIT 21; args=(); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` LIMIT 21; args=(); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 53 LIMIT 21; args=(53,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 53 LIMIT 21; args=(53,); alias=default
+Internal Server Error: /edit_book/53/
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1644, 'category_id too large')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\Django_Test\app_test\books.py", line 143, in edit_book
+    book.save()
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "D:\Anaconda\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "D:\Anaconda\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "D:\Anaconda\lib\site-packages\django\db\models\sql\compiler.py", line 1982, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "D:\Anaconda\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1644, 'category_id too large')
+(0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 53 LIMIT 21; args=(53,); alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book` WHERE `book`.`book_id` = 53 LIMIT 21; args=(53,); alias=default
+(0.000) UPDATE `book` SET `book_title` = 'hello-change', `category_id` = 15, `author` = 'hello', `book_copies` = 2, `book_pub` = 'world', `publisher_name` = 'world', `isbn` = '123-132', `copyright_year` = 2212, `date_receive` = '', `date_added` = '2013-12-11 06:47:11', `status` = 'New' WHERE `book`.`book_id` = 53; args=('hello-change', 15, 'hello', 2, 'world', 'world', '123-132', 2212, '', '2013-12-11 06:47:11', 'New', 53); alias=default
+Internal Server Error: /edit_book/53/
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1644, 'Invalid book ID')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Anaconda\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\Django_Test\app_test\books.py", line 145, in edit_book
+    cursor.callproc('insert_lost_book_plus', [book_id])
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 64, in callproc
+    return self.cursor.callproc(procname, params, kparams)
+  File "D:\Anaconda\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda\lib\site-packages\django\db\backends\utils.py", line 61, in callproc
+    return self.cursor.callproc(procname, params)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 313, in callproc
+    self._query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1644, 'Invalid book ID')
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.016) INSERT INTO `book` (`book_title`, `category_id`, `author`, `book_copies`, `book_pub`, `publisher_name`, `isbn`, `copyright_year`, `date_receive`, `date_added`, `status`) VALUES ('11111', 15, 'hello', 22, 'world', 'world', '123-132', 2222, '', '2013-12-11 06:47:11', 'New'); args=['11111', 15, 'hello', 22, 'world', 'world', '123-132', 2222, '', '2013-12-11 06:47:11', 'New']; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) SELECT `book`.`book_id`, `book`.`book_title`, `book`.`category_id`, `book`.`author`, `book`.`book_copies`, `book`.`book_pub`, `book`.`publisher_name`, `book`.`isbn`, `book`.`copyright_year`, `book`.`date_receive`, `book`.`date_added`, `book`.`status` FROM `book`; args=(); alias=default

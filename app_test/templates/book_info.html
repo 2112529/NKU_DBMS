@@ -34,6 +34,8 @@
                         <th>Author</th>
                         <th>Publisher</th>
                         <th>ISBN</th>
+                        <th>Category</th>
+
                         <th>Status</th>
                         <th>Actions</th>
                     </tr>
@@ -46,6 +48,8 @@
                         <td>{{ obj.author }}</td>
                         <td>{{ obj.publisher_name }}</td>
                         <td>{{ obj.isbn }}</td>
+                        <td>{{ obj.classname }}</td>
+
                         <td>{{ obj.status }}</td>
                         <td>
                             <a class="btn btn-primary btn-xs" href="{% url 'edit_book' obj.book_id %}">Edit</a>

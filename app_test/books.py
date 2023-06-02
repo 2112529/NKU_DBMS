@@ -2,7 +2,7 @@ from django import forms
 from django.shortcuts import render, HttpResponse, redirect
 
 from app_test import models
-from app_test.models import Book, BorrowView
+from app_test.models import Book, BorrowView,LostBook
 
 
 def book_info(request):
@@ -147,6 +147,7 @@ def edit_book(request, book_id=None):
             except IntegrityError:
                 raise ValueError("Stored procedure violation occurred")
             book.save()
+            return redirect('/book_info/')
 
             # with connection.cursor() as cursor:
             #     cursor.callproc('insert_lost_book_plus', [book_id])
@@ -232,3 +233,9 @@ def borrow_info(request):
         'filter_value': filter_value  # 将筛选值传递给模板以便显示
     }
     return render(request, 'borrow_detail_info.html', context)
+
+
+def lost_book_info(request):
+    lost_book_info = LostBook.objects.all()
+
+    return render(request, "lost_book.html", {"lost_book_info": lost_book_info})

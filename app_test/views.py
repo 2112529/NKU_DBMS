@@ -59,6 +59,10 @@ def book_info(request):
     if filter_value:
         books = books.filter(status=filter_value)  # 根据输入框的值进行筛选
 
+    for book in books:
+        category = Category.objects.filter(category_id=book.category_id).first()
+        book.classname = category.classname if category else None
+
     context = {
         'book_info': books,
         'filter_value': filter_value  # 将筛选值传递给模板以便显示

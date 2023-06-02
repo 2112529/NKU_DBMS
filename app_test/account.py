@@ -62,10 +62,7 @@ def login(request):
 
     form = LoginForm(data=request.POST)
     if form.is_valid():
-        # 验证成功, 获取到的用户名和密码
-        # print(form.cleaned_data)
-        # {'username': '123', 'password': '123'}
-        # {'username': '456', 'password': '0f54af32f41a5ba8ef3a2d40cd6ccf25'}
+        print("form is valid")
 
         # 去数据库校验用户名和密码是否正确
         admin_object = Users.objects.filter(**form.cleaned_data).first()
@@ -74,7 +71,7 @@ def login(request):
         	# 手动抛出错误显示在"password"字段下
             form.add_error("password", "用户名或密码错误")
             return render(request, 'login.html', {"form": form})
-        return redirect("/main/")
+        return redirect("/book_info/")
 
     return render(request, 'login.html', {"form": form})
 
@@ -86,16 +83,19 @@ def logup(request):
 
     form = LogupForm(data=request.POST)
     if form.is_valid():
-
+        print("form is valid")
         admin_object = Users.objects.create(**form.cleaned_data)
         # 如果数据库中没有查询到数据
         if not admin_object:
             # 手动抛出错误显示在"password"字段下
             form.add_error("password", "注册失败")
             return render(request, 'logup.html', {"form": form})
-        return render(request,"login.html",{"form": form})
+        print("jump to login")
+        return redirect("/login/")
+    else:
+        print("jump to logup")
+        return render(request, 'logup.html', {"form": form})
 
-    return render(request, 'logup.html', {"form": form})
 
 def mem_info(request):
     mem_info=Member.objects.all()

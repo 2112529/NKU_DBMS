@@ -21,6 +21,7 @@ class Book(models.Model):
     date_receive = models.CharField(max_length=20)
     date_added = models.DateTimeField()
     status = models.CharField(max_length=30)
+    classname=''
 
     class Meta:
         managed = False
@@ -64,6 +65,10 @@ class LostBook(models.Model):
     isbn = models.IntegerField(db_column='ISBN')  # Field name made lowercase.
     member_no = models.CharField(db_column='Member_No', max_length=50)  # Field name made lowercase.
     date_lost = models.DateField(db_column='Date Lost')  # Field name made lowercase. Field renamed to remove unsuitable characters.
+    date_find = models.DateField(db_column='Date Find', blank=True,
+                                 null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
+    date_new = models.DateField(db_column='Date New', blank=True,
+                                null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
 
     class Meta:
         managed = False
